@@ -1,2 +1,2 @@
-# fundamental-python-for-machine-learning
-Fundamental-Python-For-Machine-Learning part1
+# Fundamental Python-DS-AI-ML-DL
+Kumpulan materi untuk domain AI dan Python

@@ -1,0 +1,584 @@
+{"intents": [
+    {"tag": "noanswer",
+     "patterns": [""],
+     "responses": ["Maaf, saya tidak mengerti apa yang kamu maksud.", 
+        "Maaf, untuk saat ini chatbot ini belum dapat menjawab pertanyaan kamu."],
+     "context": [""]
+    },
+    {"tag": "greeting1",
+     "patterns": ["halo"],
+     "responses": ["Halo, silahkan memperkenalkan diri terlebih dahulu"],
+     "context": [""]
+    },
+    {"tag": "greeting2",
+        "patterns": ["hello"],
+        "responses": ["Hello, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting3",
+        "patterns": ["hai"],
+        "responses": ["Hai, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting4",
+        "patterns": ["selamat pagi"],
+        "responses": ["Selamat Pagi, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting5",
+        "patterns": ["selamat siang"],
+        "responses": ["Selamat Siang, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting6",
+        "patterns": ["selamat sore"],
+        "responses": ["Selamat Sore, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting_malam",
+        "patterns": ["selamat malam", "selamat malem"],
+        "responses": ["Selamat Malam, silahkan memperkenalkan diri terlebih dahulu"],
+        "context": [""]
+    },
+    {"tag": "greeting7",
+        "patterns": ["perkenalkan nama"],
+        "responses": ["Senang bertemu denganmu. Posisi apa yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "greeting8",
+        "patterns": ["perkenalkan namaku"],
+        "responses": ["Senang bertemu denganmu. Posisi apa yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "greeting9",
+        "patterns": ["melamar sebagai data scientist"],
+        "responses": ["Mengapa Anda tertarik melamar di posisi ini?"],
+        "context": [""]
+    },
+    {"tag": "greeting10",
+        "patterns": ["melamar sebagai data analyst"],
+        "responses": ["Mohon maaf, untuk saat ini posisi tersebut sedang tidak membuka lowongan. Silahkan coba lagi dilain waktu."],
+        "context": [""]
+    },
+    {"tag": "greeting11",
+        "patterns": ["melamar sebagai programmer"],
+        "responses": ["Mohon maaf, untuk saat ini posisi tersebut sedang tidak membuka lowongan. Silahkan coba lagi dilain waktu."],
+        "context": [""]
+    },
+    {"tag": "greeting12",
+        "patterns": ["melamar sebagai customer service"],
+        "responses": ["Mohon maaf, untuk saat ini posisi tersebut sedang tidak membuka lowongan. Silahkan coba lagi dilain waktu."],
+        "context": [""]
+    },
+    {"tag": "greeting13",
+        "patterns": ["melamar sebagai teller"],
+        "responses": ["Mohon maaf, untuk saat ini posisi tersebut sedang tidak membuka lowongan. Silahkan coba lagi dilain waktu."],
+        "context": [""]
+    },
+    {"tag": "greeting14",
+        "patterns": ["karena"],
+        "responses": ["Baik, sekarang bisakah Anda menyebutkan kelebihan Anda?"],
+        "context": [""]
+    },
+    {"tag": "greeting15",
+        "patterns": ["kelebihan"],
+        "responses": ["Baik, berikutnya tolong sebutkan kelemahan Anda?"],
+        "context": [""]
+    },
+    {"tag": "greeting16",
+        "patterns": ["kelemahan"],
+        "responses": ["Apakah anda memiliki pengalaman seperti bekerja atau magang di bidang data scientist sebelumnya?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman1",
+        "patterns": ["Mengerjakan project"],
+        "responses": ["Ketika kamu mengerjakan project tersebut, permasalahan apa yang kamu alami disana?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman2",
+        "patterns": ["Mengerjakan proyek"],
+        "responses": ["Ketika kamu mengerjakan proyek tersebut, permasalahan apa yang kamu alami disana?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman3",
+        "patterns": ["Pernah Kerja"],
+        "responses": ["Selama kamu kerja disana, permasalahan apa yang pernah kamu alami disana?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman4",
+        "patterns": ["Pernah bekerja"],
+        "responses": ["Selama kamu bekerja disana, permasalahan apa yang pernah kamu alami disana?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman5",
+        "patterns": ["Pernah Magang"],
+        "responses": ["Selama kamu magang di tempat tersebut, permasalahan apa yang pernah kamu selesaikan disana?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman6",
+        "patterns": ["Menyelesaikan"],
+        "responses": ["Lalu, dengasaya n pengalaman yang kamu miliki. Apa yang kamu ketahui terkait data science?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman7",
+        "patterns": ["selesai"],
+        "responses": ["Lalu, dengan pengalaman yang kamu miliki. Apa yang kamu ketahui terkait data science?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman8",
+        "patterns": ["Masalah"],
+        "responses": ["Lalu, dengan pengalaman yang kamu miliki. Apa yang kamu ketahui terkait data science?"],
+        "context": [""]
+    },
+    {"tag": "pengalaman9",
+        "patterns": ["Permasalahan "],
+        "responses": ["Lalu, dengan pengalaman yang kamu miliki. Apa yang kamu ketahui terkait data science?"],
+        "context": [""]
+    },
+    {"tag": "skill1",
+        "patterns": ["data science adalah"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu sebutkan apa saja skill yang Anda kuasai di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill2",
+        "patterns": ["data science merupakan"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu sebutkan apa saja skill yang Anda kuasai di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill3",
+        "patterns": ["data science yaitu"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu sebutkan apa saja skill yang Anda kuasai di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill4",
+        "patterns": ["machine learning"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill5",
+        "patterns": ["pembelajaran mesin"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill6",
+        "patterns": ["deep learning"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill7",
+        "patterns": ["modeling"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill8",
+        "patterns": ["membuat model"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill9",
+        "patterns": ["membangun model"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill10",
+        "patterns": ["pemodelan"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill11",
+        "patterns": ["prediksi"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill12",
+        "patterns": ["forecasting"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill13",
+        "patterns": ["modelling"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill14",
+        "patterns": ["data mining"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill15",
+        "patterns": ["gali data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill16",
+        "patterns": ["menggali data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill17",
+        "patterns": ["data wrangling"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill18",
+        "patterns": ["perapihan data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill19",
+        "patterns": ["merapihkan data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill20",
+        "patterns": ["manipulasi data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill21",
+        "patterns": ["data manipulation"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill22",
+        "patterns": ["transformasi data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill23",
+        "patterns": ["data transformation"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill24",
+        "patterns": ["feature engineering"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill25",
+        "patterns": ["visualisasi data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill26",
+        "patterns": ["data visualization"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill27",
+        "patterns": ["SQL"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill28",
+        "patterns": ["query data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill29",
+        "patterns": ["structured query language"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill30",
+        "patterns": ["query data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill31",
+        "patterns": ["database"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill32",
+        "patterns": ["menganalisis data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill33",
+        "patterns": ["data analysis"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill34",
+        "patterns": ["analisis data"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill35",
+        "patterns": ["cloud computing"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill36",
+        "patterns": ["komputasi awan"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill37",
+        "patterns": ["programming"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill38",
+        "patterns": ["pemrograman"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill39",
+        "patterns": ["coding"],
+        "responses": ["Terima kasih atas jawaban dan penjelasannya. Lalu algoritma data science apa sajakah yang Anda kuasai? Jelaskan secara singkat."],
+        "context": [""]
+    },
+    {"tag": "skill40",
+        "patterns": ["algoritma ketahui"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill41",
+        "patterns": ["algoritma kuasai"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill42",
+        "patterns": ["K-Means"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill43",
+        "patterns": ["K Means"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill44",
+        "patterns": ["KNN"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill45",
+        "patterns": ["K Nearest Neighbors"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill46",
+        "patterns": ["Naive Bayes"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill47",
+        "patterns": ["SVM"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill48",
+        "patterns": ["Support Vector Machine"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill49",
+        "patterns": ["Regression"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill50",
+        "patterns": ["Regresi"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill51",
+        "patterns": ["Decision Tree"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill52",
+        "patterns": ["Pohon Keputusan"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill53",
+        "patterns": ["Random Forest"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill54",
+        "patterns": ["Neural Network"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill55",
+        "patterns": ["Gradien Boost"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill56",
+        "patterns": ["Cat Boost"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill57",
+        "patterns": ["XGBoost"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill58",
+        "patterns": ["Clustering"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill59",
+        "patterns": ["Klustering"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill60",
+        "patterns": ["Klasifikasi"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill61",
+        "patterns": ["Classification"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill62",
+        "patterns": ["Supervised Learning"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "skill63",
+        "patterns": ["Unsupervised Learning"],
+        "responses": ["Terima kasih atas penjelasannya. Lalu tools apakah yang Anda kuasai untuk pemrograman di bidang data science?"],
+        "context": [""]
+    },
+    {"tag": "tools1",
+        "patterns": ["Bahasa python"],
+        "responses": ["jelaskan apa yang dimaksud dengan Object Oriented Programming?"],
+        "context": [""]
+    },  
+    {"tag": "tools2",
+        "patterns": ["oop"],
+        "responses": ["Terimakasih atas penjelasannya. Selanjutnya, Apa yang Anda ketahui tentang library pandas? tolong jelaskan?"],
+        "context": [""]
+    }, 
+    {"tag": "tools3",
+        "patterns": ["object oriented programming"],
+        "responses": ["Terimakasih atas penjelasannya. Selanjutnya, Apa yang Anda ketahui tentang library pandas? tolong jelaskan?", "Terimakasih atas penjelasannya. Selanjutnya, Apa yang Anda ketahui tentang library matplotlib? tolong jelaskan?", "Terimakasih atas penjelasannya. Selanjutnya, Apa yang Anda ketahui tentang library numpy? tolong jelaskan?"],
+        "context": [""]
+    }, 
+    {"tag": "tools4",
+        "patterns": ["Bahasa R"],
+        "responses": ["Apa yang Anda ketahui tentang library ggplot? tolong jelaskan?"],
+        "context": [""]
+    }, 
+    {"tag": "tools5",
+        "patterns": ["library pandas"],
+        "responses": ["Terimakasih atas penjelasannya. Selanjutnya, Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    },
+    {"tag": "tools6",
+        "patterns": ["library matplotlib"],
+        "responses": ["Terimakasih atas penjelasannya. Selanjutnya, Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    },
+    {"tag": "tools7",
+        "patterns": ["library numpy"],
+        "responses": ["Terimakasih atas penjelasannya. Selanjutnya, Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    },    
+    {"tag": "tools8",
+        "patterns": ["library ggplot"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    }, 
+    {"tag": "tools9",
+        "patterns": ["sublime text"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools10",
+        "patterns": ["vs code"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools11",
+        "patterns": ["visual studio code"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools12",
+        "patterns": ["jupyter notebook"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools13",
+        "patterns": ["google colab"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools14",
+        "patterns": ["pycharm"],
+        "responses": ["Baik, Selanjutnya berapa gaji yang Anda inginkan?"],
+        "context": [""]
+    },
+    {"tag": "tools15",
+        "patterns": ["Bahasa java"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    }, 
+    {"tag": "tools16",
+        "patterns": ["Bahasa javascript"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    }, 
+    {"tag": "tools17",
+        "patterns": ["Bahasa C"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    }, 
+    {"tag": "tools18",
+        "patterns": ["Bahasa c++"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    }, 
+    {"tag": "tools19",
+        "patterns": ["Bahasa php"],
+        "responses": ["Apa saja tools atau software Text Editor/IDE yang Anda pakai?"],
+        "context": [""]
+    },
+    {"tag": "penutup1",
+        "patterns": ["disesuaikan"],
+        "responses": ["Baiklah, kami akan sesuaikan. Berikut merupakan link SOP dari kantor kami"],
+        "context": [""]
+    },
+    {"tag": "penutup1a",
+        "patterns": ["juta"],
+        "responses": ["Baiklah. Berikut merupakan link SOP dari kantor kami"],
+        "context": [""]
+    },
+    {"tag": "penutup1",
+        "patterns": ["jt"],
+        "responses": ["Baiklah. Berikut merupakan link SOP dari kantor kami"],
+        "context": [""]
+    },
+    {"tag": "penutup2",
+        "patterns": ["upah minimum kerja"],
+        "responses": ["Baiklah, akan disesuaikan dengan UMR DKI Jakarta. Berikut merupakan link SOP dari kantor kami"],
+        "context": [""]
+    },
+    {"tag": "penutup3",
+        "patterns": ["rupiah"],
+        "responses": ["Baiklah, berikut merupakan link SOP dari kantor kami"],
+        "context": [""]
+    },
+    {"tag": "penutup4",
+        "patterns": ["baik, baiklah"],
+        "responses": ["Kami akan mengabari Anda secepatnya"],
+        "context": [""]
+    },
+    {"tag": "penutup5",
+        "patterns": ["terima kasih"],
+        "responses": ["Kami akan mengabari Anda secepatnya"],
+        "context": [""]
+    }  
+]
+}

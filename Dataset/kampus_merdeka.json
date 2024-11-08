@@ -37,6 +37,17 @@
       ]
     },
     {
+      "tag": "kap",
+      "patterns": [
+        "Apa itu kelas awan pintar?",
+        "Siapa ketua kelas?"
+      ],
+      "responses": [
+        "kelas awan pintar  adalah kammu",
+        "umam adalah teman calon pemmimpin besar"
+      ]
+    },
+    {
       "tag": "pencipta_kadekbot",
       "patterns": [
         "Siapa pembuatmu?",
